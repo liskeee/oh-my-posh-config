@@ -6,8 +6,8 @@
       "segments": [
         {
           "background": "#61AFEF",
-          "foreground": "#FFFFFF",          
-	  "leading_diamond": "\ue0b6",
+          "foreground": "#f8f8f2",
+          "leading_diamond": "\ue0b6",
           "style": "diamond",
           "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}  ",
           "trailing_diamond": "\ue0b0",
@@ -44,14 +44,6 @@
           "style": "powerline",
           "template": " \ue725 ({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}) ",
           "type": "git"
-        },
-        {
-          "background": "#8be9fd",
-          "foreground": "#f8f8f2",
-          "powerline_symbol": "\ue0b0",
-          "style": "powerline",
-          "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
-          "type": "node"
         },
         {
           "background": "#ff79c6",
